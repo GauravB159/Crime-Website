@@ -5,6 +5,7 @@ body {
     margin:0;
     background:url(back.jpg);
     background-size:100%;
+    background-attachment:fixed;
     background-repeat:no-repeat;
 }
 
@@ -14,7 +15,6 @@ body {
     padding: 0;
     overflow: hidden;
     background-color:transparent;
-    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -60,7 +60,7 @@ li a:hover:not(.active) {
     font-family:'Nunito',cursive;
     color: #FFFFFF;
 }
-input[type=text] {
+.search {
     width: 500px;
     box-sizing: border-box;
     border-color:transparent;
@@ -75,11 +75,11 @@ input[type=text] {
     padding: 12px 20px 12px 40px;
     margin: 0px 0px 0px 420px;
 }
-input[type=text]:focus{
+.search:focus{
 	background-color:rgba(0,0,0,0.6);
 	outline:none;
 }
-input[type=text]:hover{
+.search:hover{
 	background-color:rgba(0,0,0,0.6);
 }
 .button {
@@ -99,6 +99,9 @@ input[type=text]:hover{
 }
 .button:hover{
 	background-color:rgba(0,0,0,0.6);
+}
+.button:{
+	outline:none;
 }
 .search:hover {
     background-color: #3e8e41;
