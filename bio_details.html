@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <link rel="stylesheet" type="text/css" href="bio_details.css">
+  <link href="https://fonts.googleapis.com/css?family=Allerta|Nunito" rel="stylesheet">
+</head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a id="active" href="#">Home</a></li>
+        <li><a href="#">Criminal Records</a></li>
+        <li><a href="#">Jail Map</a></li>
+        <li style="float:right"><a href="enterRecord.html">Login</a></li>
+        <li style="float:right"><a href="#">Register</a></li>
+      </ul>
+    </div>
+
+
+    <div class="bio_details">
+
+      <ul class="tab">
+        <li><a id="default" href="#" class="tablinks" onclick="openDetail(event, 'finger_print')">Finger print</a></li>
+        <li><a href="#" class="tablinks" onclick="openDetail(event, 'Paris')">Iris scan</a></li>
+        <li><a href="#" class="tablinks" onclick="openDetail(event, 'Tokyo')">DNA</a></li>
+        <p id="Biometric" style="float: right">Biometric Details</p>
+      </ul>
+
+      <div id="finger_print" class="tabcontent">
+
+          <img id="myImg" src="hand.jpg" alt="Donand Trump" height="300px" width="300px">
+          <div class="box" >
+            <img id="box1" src="box.png">
+            <img id="box2" src="box.png">
+            <img id="box3" src="box.png">
+            <img id="box4" src="box.png">
+            <img id="box5" src="box.png">
+          </div>
+
+          <div id="myModal" class="modal">
+            <span class="close">x</span>
+            <img class="modal-content" id="finger1" src="thumb.jpg">
+            <div id="caption"></div>
+          </div>
+
+      </div>
+
+      <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p> 
+      </div>
+
+      <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+
+      <img id="image" src="dtrump.jpg">
+      <p id="name">Donald trump</p>
+    </div>
+
+    <script type="text/javascript" src="bio_details.js"></script>
+       
+  </body>
+</html> 
