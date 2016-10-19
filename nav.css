@@ -8,7 +8,9 @@ body {
     background-attachment:fixed;
     background-repeat:no-repeat;
 }
-
+img{
+	size:1%;
+}
 .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -96,14 +98,11 @@ li a:hover:not(.active) {
     cursor: pointer;
     left:580px;
     top:30px;
+    outline:none;
 }
 .button:hover{
 	background-color:rgba(0,0,0,0.6);
 }
-.button:{
-	outline:none;
-}
-.search:hover {
-    background-color: #3e8e41;
-    color: white;
-}
+
+
+		

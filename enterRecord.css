@@ -131,11 +131,14 @@ position:absolute;
 }
 input[type=radio]:checked + .rad:before {
     content: "\2022";
-    color: rgba(0,0,0,0.6);
-    font-size: 30px;
+    color: white;
+    font-size: 25px;
     position:relative;
     text-align: center;
-    line-height: 12px;
+    line-height: 14px;
+}
+.hide{
+	display:none;
 }
 #browse{
 display:none;
