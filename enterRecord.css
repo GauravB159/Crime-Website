@@ -152,6 +152,42 @@ display:none;
 	z-index:-1;
 	position:absolute;
 }
+#click2{
+	font-family:'Allerta',sans-serif;
+	color:white;
+	top:833px;
+	left:478px;
+	font-size:20px;
+	z-index:-1;
+	position:absolute;
+}
+#click3{
+	font-family:'Allerta',sans-serif;
+	color:white;
+	top:1103px;
+	left:478px;
+	font-size:20px;
+	z-index:-1;
+	position:absolute;
+}
+table{
+	margin-left:70px;
+}
+.focus{
+	background-color:rgba(0,0,0,0.7);
+}
+td{
+	background-color:rgba(0,0,0,0.4);
+	color:white;
+	font-family:Allerta, sans-serif;
+	border:2px solid rgba(0,0,0,0.6);
+	font-size:30px;
+	cursor:pointer;
+	padding:30px;
+}
+td:hover{
+	background-color:rgba(0,0,0,0.7);
+}
 .img{
 	font-size:25px;
 	top:725px;
@@ -161,6 +197,9 @@ display:none;
 	padding-left:100px;
 	box-sizing:border-box;
 	display:inline-block;
+}
+#im3{
+	top:995px;
 }
 select {
     width: 100px;

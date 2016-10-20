@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New record</title>
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <link rel="stylesheet" type="text/css" href="enterRecord.css">
+  <link href="https://fonts.googleapis.com/css?family=Allerta|Nunito" rel="stylesheet">
+  <script src="enterRecord.js" type="text/javascript"></script>
+  <script src="jquery-3.1.1.js" type="text/javascript"></script>
+</head>
+<body>
+
+  <div class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Criminal Records</a></li>
+      <li><a href="#">Jail Map</a></li>
+      <li style="float:right"><a href="#">Logout</a></li>
+      <li style="float:right"><a href="#" id="active">Enter New Record</a></li>
+    </ul>
+    <p id="badgeID">Badge ID=2015140007</p>
+  </div>
+<div class="mn">
+   <div class="nm">
+    <p id="c">C</p>
+    <p id="rime-in">rime-In</p>
+    <p id="dex">Dex</p>
+    <p id="rime-in">: New Record</p>
+  </div>
+  <div class="newRecord2" id="pg2">
+    	<p class="ipname">Crime Types: </p>
+    <table>
+    <tr>
+    	<td>Robbery</td>
+    	<td>Breaking and Entering</td>
+    	<td>Sexual Assault</td>
+    </tr>
+    <tr>
+    	<td>Murderer</td>
+    	<td>Serial Killer</td>
+    	<td>Rapist</td>
+    </tr>
+    <tr>
+    	<td>Chain Snatcher</td>
+    	<td>Kidnapper</td>
+    	<td>Fraud</td>
+    </tr>
+    </table>
+   	 <script>
+	$('td').click(function(){
+		$(this).toggleClass('focus');
+	})
+	</script>
+    <form>
+    <br/>
+     <p class="img" id="im2">Iris: </p>
+      <label for="browse">
+      <label id="click2">Click to upload</label>
+      <img id="avatar" src='blank.gif' style="height: 200px; width:200px;">
+      </label>
+      <input id="browse" type="file" name="browseImage" onchange="previewFile()">
+      <br/>
+       <p class="img" id="im3">Fingerprint: </p>
+      <label for="browse">
+      <label id="click3">Click to upload</label>
+      <img id="avatar" src='blank.gif' style="height: 200px; width:200px;">
+      </label>
+      <br/>
+      <input id="browse" type="file" name="browseImage" onchange="previewFile()">
+    <button type="submit" id="bttn" >Next Page</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
